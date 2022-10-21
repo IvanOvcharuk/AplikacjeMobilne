@@ -16,5 +16,8 @@ class MainActivity : AppCompatActivity() {
             var text2 = findViewById<EditText>(R.id.Poletkst).text.toString();
             findViewById<TextView>(R.id.Etykietimieinazwisko).text = text1 + text2;
         }
+        findViewById<Button>(R.id.but2_in).setOnClickListener {
+            findViewById<TextView>(R.id.Etykietimieinazwisko).text = "Ivan Ovcharuk";
+        }
     }
 }
